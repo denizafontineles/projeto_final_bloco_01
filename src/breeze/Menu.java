@@ -2,15 +2,29 @@ package breeze;
 
 import java.util.Scanner;
 
+import breeze.model.Breeze;
+import breeze.model.Cabelo;
+import breeze.model.Corpo;
+import breeze.model.Rosto;
+
 public class Menu {
 
 	public static void main(String[] args) {
 		
 		Scanner read = new Scanner(System.in);
 		
-		int op, codigo;
-		String nome, categoria, utilidade, marca;
+		int op, codigo, categoria;
+		String nome, utilidade, marca;
 		float  valor;
+		
+//		Breeze pr = new Breeze(1, 1, "Óleos de Amêndoas", "Hidratação 24hs", "Principia", 30.0f);
+//		pr.visualizar();
+		Breeze pr1 = new Rosto(1, 1, "Sérum Hialurônicos", "Firmeza e Elasticidade", "Principia", 30.0f);
+		pr1.visualizar();
+		Breeze pr2 = new Corpo(2, 2, "Óleos de Amêndoas", "Hidratação 24hs", "Nivea", 30.0f);
+		pr2.visualizar();
+		Breeze pr3 = new Cabelo(3, 3, "Royal Fashion", "Acobreado", "Retenção da cor e Brilho", "Igora", 30.0f);
+		pr3.visualizar();
 		
 		while(true) {
 			
@@ -36,18 +50,18 @@ public class Menu {
 				System.exit(0);
 			}
 			switch(op) {
-				case 1:
+				case 1 -> {
 					System.out.println("\n            Opção selecionada: 1 - Adicionar produto\n");
 					
 					System.out.print("Digite o código do produto: ");
+					codigo = read.nextInt();
+					
+					System.out.print("Digite a categoria do produto: ");
 					codigo = read.nextInt();
 
 					System.out.print("Digite o nome do produto: ");
 					read.skip("\\R?");
 					nome = read.nextLine();
-					
-					System.out.print("Digite a categoria do produto: ");
-					categoria = read.nextLine();
 					
 					System.out.print("Digite a indicação para utilização do produto: ");
 					utilidade = read.nextLine();
@@ -57,11 +71,9 @@ public class Menu {
 					
 					System.out.print("Digite o valor do produto: ");
 					valor = read.nextInt();
-					
-				break;
-				case 2:
+				}
+				case 2 ->
 					System.out.println("Listar todas as Contas\n\n");
-				break;
 			}
 		}
 
