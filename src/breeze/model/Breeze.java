@@ -83,9 +83,9 @@ public abstract class Breeze {
 			}	
 		}
 		
-		System.out.println("\n***********************************************************");
+		System.out.println("\n*****************************************************");
 		System.out.println("Dados da Conta:");
-		System.out.println("***********************************************************");
+		System.out.println("*****************************************************");
 		System.out.println("\nCódigo: " + this.codigo);
 		System.out.println("Categoria: " + categoria);
 		System.out.println("Nome: " + this.nome);
