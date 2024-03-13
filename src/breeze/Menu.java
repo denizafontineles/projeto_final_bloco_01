@@ -16,7 +16,7 @@ public class Menu {
 			
 			System.out.println("\n\n*************************************************");
 			System.out.println("                                                     ");
-			System.out.println("            BEM-VINDES À LOJA BREEZE                 ");
+			System.out.println("            BEM-VINDES A BREEZE STORE                ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
@@ -34,7 +34,7 @@ public class Menu {
 			op = read.nextInt();
 			
 			if (op == 9) {
-				System.out.println("\nBREEZE- A Frafrância da Brisa em você!");
+				System.out.println("\nBREEZE- A Fragrância da Brisa em Você!");
 				System.exit(0);
 			}
 			switch(op) {
