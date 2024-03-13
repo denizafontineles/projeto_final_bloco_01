@@ -16,7 +16,7 @@ public class Menu {
 			
 			System.out.println("\n\n*************************************************");
 			System.out.println("                                                     ");
-			System.out.println("            BEM-VINDES A BREEZE STORE                ");
+			System.out.println("            WELCOME THE BREEZE STORE                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
